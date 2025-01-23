@@ -1,0 +1,65 @@
+:root {
+  /* Nouvelle palette de couleurs */
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #3b82f6;
+  --secondary: #059669;
+  --secondary-dark: #047857;
+  --accent: #f59e0b;
+  --accent-dark: #d97706;
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --error: #ef4444;
+  --success: #22c55e;
+}
+
+/* Animations pour les boutons */
+.btn {
+  @apply font-medium rounded-lg transition-all duration-200 transform;
+}
+
+.btn:active {
+  @apply scale-95;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-primary-dark focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white hover:bg-secondary-dark focus:ring-2 focus:ring-secondary/50 focus:ring-offset-2;
+}
+
+.btn-accent {
+  @apply bg-accent text-white hover:bg-accent-dark focus:ring-2 focus:ring-accent/50 focus:ring-offset-2;
+}
+
+/* Animations pour les cartes */
+.card {
+  @apply bg-surface rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300;
+}
+
+/* Effets de survol pour les images */
+.image-hover {
+  @apply transition-transform duration-300 ease-out hover:scale-105;
+}
+
+/* Animations pour les badges */
+.badge {
+  @apply px-3 py-1 rounded-full text-sm font-medium transition-colors duration-200;
+}
+
+.badge-success {
+  @apply bg-success/10 text-success;
+}
+
+.badge-error {
+  @apply bg-error/10 text-error;
+}
+
+/* Animations pour les inputs */
+.input {
+  @apply border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-200;
+} 
